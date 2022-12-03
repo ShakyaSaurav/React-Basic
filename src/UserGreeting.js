@@ -5,18 +5,24 @@ import React, { Component } from 'react'
       super(props)
     
       this.state = {
-         isLoggedIn: false
+         isLoggedIn: true
       }
     }
   render() {
-    let Message
-    if(this.state.isLoggedIn){
-        Message=<div>Welcome Saurav</div>
-    }
-    else{
-        Message=<div>Welcome guest</div>
-    }
-    return <div>{Message}</div>
+    return this.state.isLoggedIn && <div> welcome Saurav</div>
+    // return this.state.isLoggedIn?(
+    //     <div>Welcome Saurav</div>
+    // ):(
+    //     <div>Welcome guest</div>
+    // )
+    // let Message
+    // if(this.state.isLoggedIn){
+    //     Message=<div>Welcome Saurav</div>
+    // }
+    // else{
+    //     Message=<div>Welcome guest</div>
+    // }
+    // return <div>{Message}</div>
 //     if(this.state.isLoggedIn){
 //         return (
 //             <div>
