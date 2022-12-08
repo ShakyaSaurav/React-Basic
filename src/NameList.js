@@ -1,16 +1,32 @@
 import React from 'react'
 
 function NameList() {
-    const names=['saurav','saugat','aman']
+    const persons=[
+        {
+            id:1,
+            name:'Saurav',
+            age:23,
+            job:'react',
+        },
+        {
+            id:2,
+            name:'Aman',
+            age:23,
+            job:'.net',
+        },
+        {
+            id:3,
+            name:'saugat',
+            age:28,
+            job:'wordpress',
+        }
+    ]
+    const personList= persons.map(person=>(
+        <h2> I am {person.name} and {person.age} years old. i work with {person.job}</h2>
+    ))
   return (
     <div>
-        {/* <h2>{names[0]}</h2>
-        <h2>{names[1]}</h2>
-        <h2>{names[2]}</h2> */}
-        {
-            names.map(stdname=><h2>{stdname}</h2>)
-        }
-
+        {personList};
     </div>
   )
 }
