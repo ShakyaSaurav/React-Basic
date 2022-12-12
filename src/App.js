@@ -10,7 +10,7 @@ import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './UserGreeting';
-import NameList from './NameList';
+import NameList from './components/NameList';
 function App() {
   return (
     <div className="App">
